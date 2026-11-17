@@ -1,0 +1,1192 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Oswald:wght@400;500;600;700&display=swap');
+/* =========================================
+   CALSIE SOLAR SHOP
+   Main Website Stylesheet
+   ========================================= */
+
+/* 1. COLOUR PALETTE */
+
+:root {
+    --primary-green: #39D353;
+    --dark-green: #168A3A;
+    --light-green: #E2FFE8;
+
+    --primary-blue: #061B3A;
+    --dark-blue: #031126;
+    --light-blue: #102B50;
+
+    --dark-navy: #031126;
+    --text-color: #F5F7FA;
+    --light-grey: #102B50;
+    --white: #FFFFFF;
+    --border-color: #25466B;
+
+    --accent-red: #E51D2A;
+    --shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+/* 2. GENERAL PAGE SETTINGS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--white);
+    color: var(--text-color);
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    color: var(--primary-blue);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--dark-green);
+}
+
+
+/* 3. HEADER */
+
+header {
+    background-color: var(--white);
+    padding: 20px 5%;
+    border-bottom: 3px solid var(--primary-green);
+    box-shadow: var(--shadow);
+}
+
+header h1 {
+    color: var(--dark-green);
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+
+/* 4. NAVIGATION BAR */
+
+nav {
+    background-color: var(--dark-green);
+    padding: 15px 5%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav ul li a {
+    color: var(--white);
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: var(--primary-blue);
+    color: var(--white);
+}
+
+
+/* 5. MAIN CONTENT */
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 35px auto;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    color: var(--dark-green);
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: var(--dark-blue);
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+
+/* 6. HOME PAGE INTRODUCTION */
+
+main > section:first-child {
+    background-color: var(--light-green);
+    padding: 45px 35px;
+    border-left: 5px solid var(--primary-green);
+    border-radius: 8px;
+}
+
+main > section:first-child h2 {
+    font-size: 34px;
+}
+
+
+/* 7. PRODUCT AND SERVICE CARDS */
+
+article {
+    background-color: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+}
+
+article:hover {
+    transform: translateY(-4px);
+}
+
+article h3 {
+    color: var(--dark-green);
+}
+
+article ul {
+    padding-left: 25px;
+    margin: 15px 0;
+}
+
+article li {
+    margin-bottom: 7px;
+}
+
+
+/* 8. PRICES */
+
+article h2 {
+    color: var(--primary-green);
+    font-size: 27px;
+    margin: 15px 0;
+}
+
+
+/* 9. BLACK FRIDAY SPECIALS */
+
+#black-friday {
+    background-color: var(--light-blue);
+    padding: 30px;
+    border-radius: 10px;
+    border-top: 5px solid var(--primary-blue);
+}
+
+#black-friday > h2 {
+    color: var(--dark-blue);
+    text-align: center;
+    font-size: 32px;
+}
+
+#black-friday > p {
+    text-align: center;
+}
+
+#black-friday article {
+    border-top: 4px solid var(--primary-green);
+}
+
+#black-friday article h2 {
+    color: var(--primary-blue);
+}
+
+
+/* 10. BUTTONS AND LINKS */
+
+button,
+input[type="submit"],
+input[type="reset"] {
+    background-color: var(--primary-green);
+    color: var(--white);
+    border: none;
+    padding: 12px 22px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: var(--dark-blue);
+}
+
+article a,
+main section a {
+    display: inline-block;
+    background-color: var(--primary-blue);
+    color: var(--white);
+    padding: 10px 18px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+article a:hover,
+main section a:hover {
+    background-color: var(--dark-green);
+    color: var(--white);
+}
+
+
+/* 11. FORMS */
+
+form {
+    background-color: var(--light-grey);
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 750px;
+    margin: 25px auto;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: var(--dark-navy);
+    margin-bottom: 7px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid var(--primary-blue);
+    border-color: var(--primary-blue);
+}
+
+textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+
+/* 12. CONTACT INFORMATION */
+
+address {
+    font-style: normal;
+    background-color: var(--light-green);
+    padding: 25px;
+    border-radius: 8px;
+}
+
+
+/* 13. FOOTER */
+
+footer {
+    background-color: var(--dark-navy);
+    color: var(--white);
+    text-align: center;
+    padding: 30px 15px;
+    margin-top: 50px;
+}
+
+footer p {
+    margin-bottom: 8px;
+}
+
+footer a {
+    color: #A9D9F5;
+}
+
+footer a:hover {
+    color: var(--white);
+}
+
+
+/* 14. TABLETS */
+
+@media screen and (max-width: 768px) {
+
+    header {
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 3px;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    main {
+        width: 94%;
+    }
+
+    section h2 {
+        font-size: 24px;
+    }
+
+    main > section:first-child {
+        padding: 30px 20px;
+    }
+
+    #black-friday {
+        padding: 18px;
+    }
+
+}
+
+
+/* 15. MOBILE PHONES */
+
+@media screen and (max-width: 480px) {
+
+    body {
+        font-size: 15px;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    nav ul li a {
+        padding: 9px;
+    }
+
+    main {
+        width: 92%;
+        margin: 20px auto;
+    }
+
+    main > section:first-child h2 {
+        font-size: 25px;
+    }
+
+    article {
+        padding: 18px;
+    }
+
+    article h2 {
+        font-size: 23px;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    #black-friday > h2 {
+        font-size: 25px;
+    }
+
+}
+/* =========================================
+   CALSIE SOLAR SHOP - UPDATED DESIGN
+   Blue-primary colour scheme
+   ========================================= */
+
+/* UPDATED COLOUR PALETTE */
+
+:root {
+    --primary-green: #36A66A;
+    --dark-green: #237B4A;
+    --light-green: #E4F3E9;
+
+    --primary-blue: #10558A;
+    --dark-blue: #0B3F68;
+    --light-blue: #EAF2F8;
+
+    --dark-navy: #102B40;
+    --text-color: #394B59;
+    --light-grey: #F4F7F8;
+    --white: #FFFFFF;
+
+    --border-color: #DCE4E8;
+
+    --shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+/* HEADER */
+
+.site-header {
+    background-color: var(--white);
+    padding: 22px 5%;
+    border-bottom: 3px solid var(--primary-green);
+    box-shadow: var(--shadow);
+}
+
+.header-brand {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.brand-name {
+    color: var(--primary-blue);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.brand-name span {
+    color: var(--dark-blue);
+}
+
+.header-brand p {
+    color: var(--text-color);
+    margin: 5px 0 0;
+}
+
+
+/* HORIZONTAL NAVIGATION */
+
+.main-navigation {
+    background-color: var(--primary-blue);
+    padding: 12px 3%;
+    position: relative;
+    z-index: 10;
+}
+
+.main-navigation ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-navigation ul li {
+    width: auto;
+}
+
+.main-navigation ul li a {
+    display: block;
+    color: var(--white);
+    padding: 10px 13px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.main-navigation ul li a:hover,
+.main-navigation ul li a.active {
+    background-color: var(--dark-blue);
+    color: var(--white);
+}
+
+
+/* HERO SECTION */
+
+.hero-section {
+    background: linear-gradient(
+        120deg,
+        var(--dark-blue),
+        var(--primary-blue)
+    );
+    color: var(--white);
+    padding: 80px 8%;
+    border-radius: 12px;
+    margin-bottom: 40px;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero-label,
+.promotion-label {
+    color: #B8E8CE;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+
+.hero-section h1 {
+    color: var(--white);
+    font-size: clamp(32px, 5vw, 48px);
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    color: var(--white);
+    font-size: 17px;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+
+/* BUTTONS */
+
+.button-primary,
+.button-secondary,
+.button-light {
+    display: inline-block;
+    padding: 12px 22px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.button-primary {
+    background-color: var(--primary-blue);
+    color: var(--white);
+}
+
+.button-primary:hover {
+    background-color: var(--dark-blue);
+    color: var(--white);
+}
+
+.button-secondary {
+    background-color: var(--white);
+    color: var(--dark-blue);
+}
+
+.button-secondary:hover {
+    background-color: var(--light-green);
+    color: var(--dark-blue);
+}
+
+.button-light {
+    background-color: var(--white);
+    color: var(--dark-blue);
+}
+
+.button-light:hover {
+    background-color: var(--light-green);
+    color: var(--dark-blue);
+}
+
+
+/* WELCOME SECTION */
+
+.welcome-section {
+    background-color: var(--light-blue);
+    padding: 35px;
+    border-left: 5px solid var(--primary-blue);
+    border-radius: 8px;
+}
+
+.welcome-section h2 {
+    color: var(--dark-blue);
+}
+
+
+/* PRODUCT GRID */
+
+.featured-section {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.featured-section > p {
+    margin-bottom: 30px;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin: 25px 0;
+    text-align: left;
+}
+
+.feature-card {
+    background-color: var(--white);
+    border: 1px solid var(--border-color);
+    border-top: 4px solid var(--primary-blue);
+    border-radius: 9px;
+    padding: 25px;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    border-top-color: var(--primary-green);
+}
+
+.feature-card h3 {
+    color: var(--dark-blue);
+}
+
+
+/* BLACK FRIDAY PROMOTION */
+
+.promotion-section {
+    background: linear-gradient(
+        120deg,
+        var(--primary-blue),
+        var(--dark-blue)
+    );
+    color: var(--white);
+    padding: 45px 35px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.promotion-section h2,
+.promotion-section h3 {
+    color: var(--white);
+}
+
+.promotion-section p {
+    color: var(--white);
+}
+
+
+/* SOLAR CARE */
+
+.solar-care-section {
+    background-color: var(--light-green);
+    padding: 35px;
+    border-radius: 10px;
+    border-left: 5px solid var(--primary-green);
+}
+
+.solar-care-section h2 {
+    color: var(--dark-blue);
+}
+
+.solar-care-section ul {
+    padding-left: 25px;
+    margin-bottom: 20px;
+}
+
+
+/* CONTACT CALL TO ACTION */
+
+.contact-cta {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    padding: 45px 30px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.contact-cta h2 {
+    color: var(--white);
+}
+
+.contact-cta p {
+    color: var(--white);
+}
+
+
+/* FOOTER */
+
+.site-footer {
+    background-color: var(--dark-navy);
+    color: var(--white);
+    text-align: center;
+    padding: 35px 15px;
+    margin-top: 50px;
+}
+
+.site-footer h3 {
+    color: var(--white);
+}
+
+.site-footer a {
+    color: #A9D9F5;
+}
+
+.site-footer a:hover {
+    color: var(--primary-green);
+}
+
+
+/* TABLET RESPONSIVENESS */
+
+@media screen and (max-width: 900px) {
+
+    .main-navigation ul {
+        gap: 2px;
+    }
+
+    .main-navigation ul li a {
+        padding: 9px 10px;
+        font-size: 13px;
+    }
+
+    .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* MOBILE RESPONSIVENESS */
+
+@media screen and (max-width: 600px) {
+
+    .main-navigation ul {
+        justify-content: center;
+    }
+
+    .main-navigation ul li {
+        width: auto;
+    }
+
+    .main-navigation ul li a {
+        padding: 9px 10px;
+        font-size: 12px;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-section {
+        padding: 45px 22px;
+    }
+
+    .hero-section h1 {
+        font-size: 32px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .hero-buttons a {
+        text-align: center;
+    }
+
+    .welcome-section,
+    .solar-care-section {
+        padding: 25px 20px;
+    }
+
+    .promotion-section,
+    .contact-cta {
+        padding: 35px 20px;
+    }
+
+}
+/* Stronger green accents */
+
+.site-header {
+    border-bottom: 4px solid var(--primary-green);
+}
+
+.main-navigation {
+    background-color: var(--dark-blue);
+    border-bottom: 3px solid var(--primary-green);
+}
+
+.main-navigation ul li a:hover,
+.main-navigation ul li a.active {
+    background-color: var(--primary-green);
+    color: var(--white);
+}
+
+.feature-card {
+    border-top: 4px solid var(--primary-green);
+}
+
+.promotion-section {
+    border-bottom: 5px solid var(--primary-green);
+}
+
+.contact-cta {
+    border-top: 5px solid var(--primary-green);
+}
+
+.button-primary {
+    background-color: var(--primary-blue);
+    border-left: 4px solid var(--primary-green);
+}
+
+.hero-section {
+    border-bottom: 5px solid var(--primary-green);
+}
+/* =================================
+   CALSIE SOLAR SHOP - NEW BRAND LOOK
+================================= */
+
+/* General website */
+body {
+    background-color: var(--primary-blue);
+    color: var(--text-color);
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    line-height: 1.7;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--white);
+}
+
+h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+h2 {
+    font-size: clamp(1.6rem, 4vw, 2.4rem);
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+p, li, label {
+    color: #E5EDF7;
+}
+
+/* Header and logo */
+.site-header {
+    background: linear-gradient(120deg, #031126, #0B2B52);
+    border-bottom: 4px solid var(--primary-green);
+    padding: 18px 4%;
+}
+
+.header-brand {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 25px;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.brand-logo {
+    display: block;
+    flex-shrink: 0;
+}
+
+.brand-logo img {
+    display: block;
+    width: 260px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.brand-copy h1 {
+    font-size: 1.5rem;
+    color: var(--primary-green);
+    margin: 0 0 5px;
+}
+
+.brand-copy p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Navigation */
+.main-navigation {
+    background-color: var(--dark-blue);
+    border-bottom: 3px solid var(--primary-green);
+    padding: 12px 3%;
+}
+
+.main-navigation ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-navigation ul li {
+    width: auto;
+}
+
+.main-navigation ul li a {
+    display: block;
+    color: white;
+    padding: 10px 13px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 800;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.main-navigation ul li a:hover,
+.main-navigation ul li a.active {
+    background-color: var(--primary-green);
+    color: #031126;
+}
+
+/* Main content sections */
+main {
+    background-color: var(--primary-blue);
+}
+
+.welcome-section,
+.featured-section {
+    background-color: var(--primary-blue);
+    padding: 55px 6%;
+    text-align: center;
+}
+
+.welcome-section {
+    background: linear-gradient(135deg, #061B3A, #102B50);
+    border-bottom: 3px solid var(--primary-green);
+}
+
+.welcome-section h1 {
+    color: var(--primary-green);
+}
+
+.featured-section h2 {
+    color: var(--primary-green);
+    margin-bottom: 30px;
+}
+
+/* Product and service cards */
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 22px;
+    max-width: 1300px;
+    margin: 30px auto;
+}
+
+.feature-card {
+    background: #102B50;
+    border: 1px solid #25466B;
+    border-top: 5px solid var(--primary-green);
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    text-align: left;
+}
+
+.feature-card:hover {
+    transform: translateY(-6px);
+    border-top-color: var(--accent-red);
+}
+
+.feature-card h2,
+.feature-card h3 {
+    color: var(--primary-green);
+}
+
+.feature-card ul {
+    padding-left: 20px;
+}
+
+.feature-card li {
+    margin-bottom: 8px;
+}
+
+/* Promotions */
+.promotion-section {
+    background: linear-gradient(135deg, #031126, #102B50);
+    padding: 55px 6%;
+    border-top: 4px solid var(--primary-green);
+    border-bottom: 5px solid var(--accent-red);
+    text-align: center;
+}
+
+.promotion-section > h2 {
+    color: var(--accent-red);
+    font-size: clamp(2rem, 5vw, 3rem);
+}
+
+/* Call to action sections */
+.contact-cta {
+    background: linear-gradient(120deg, #0B2B52, #031126);
+    border-top: 5px solid var(--primary-green);
+    padding: 55px 6%;
+    text-align: center;
+}
+
+.contact-cta h2 {
+    color: var(--primary-green);
+}
+
+/* Buttons */
+.button-primary {
+    display: inline-block;
+    background-color: var(--primary-green);
+    color: #031126;
+    border: none;
+    border-left: 5px solid var(--accent-red);
+    border-radius: 5px;
+    padding: 12px 22px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.button-primary:hover {
+    background-color: #FFFFFF;
+    color: var(--dark-blue);
+    transform: translateY(-2px);
+}
+
+.button-light {
+    display: inline-block;
+    background-color: var(--primary-green);
+    color: #031126;
+    padding: 12px 22px;
+    border-radius: 5px;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+/* Forms */
+form {
+    max-width: 750px;
+    margin: 30px auto;
+    text-align: left;
+    background-color: #102B50;
+    padding: 30px;
+    border-radius: 10px;
+    border-top: 5px solid var(--primary-green);
+}
+
+form label {
+    display: block;
+    margin: 15px 0 7px;
+    font-weight: 700;
+}
+
+form input,
+form select,
+form textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px;
+    border: 1px solid #52708F;
+    border-radius: 5px;
+    background-color: #F5F7FA;
+    color: #172B40;
+    font-family: 'Montserrat', sans-serif;
+}
+
+form button {
+    margin-top: 20px;
+}
+
+/* Links */
+a {
+    color: var(--primary-green);
+}
+
+a:hover {
+    color: #FFFFFF;
+}
+
+/* Footer */
+.site-footer {
+    background-color: #020C1B;
+    border-top: 4px solid var(--primary-green);
+    padding: 35px 5%;
+    text-align: center;
+}
+
+.site-footer h3 {
+    color: var(--primary-green);
+}
+
+.site-footer a {
+    color: var(--primary-green);
+    font-weight: 700;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 700px) {
+    .header-brand {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+    }
+
+    .brand-logo img {
+        width: 230px;
+    }
+
+    .brand-copy h1 {
+        font-size: 1.3rem;
+    }
+
+    .main-navigation ul {
+        gap: 3px;
+    }
+
+    .main-navigation ul li a {
+        padding: 9px 10px;
+        font-size: 0.75rem;
+    }
+
+    .welcome-section,
+    .featured-section,
+    .promotion-section,
+    .contact-cta {
+        padding: 35px 5%;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    form {
+        padding: 20px;
+    }
+}
